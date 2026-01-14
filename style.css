@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(to top, #0f2027, #203a43, #2c5364);
+    overflow: hidden;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    top: 25%;
+}
+
+/* Text */
+.title {
+    font-size: 4rem;
+    animation: glow 2s infinite alternate;
+}
+
+.subtitle {
+    margin-top: 15px;
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+/* Glow animation */
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px orange, 0 0 20px red;
+    }
+    to {
+        text-shadow: 0 0 30px gold, 0 0 60px orange;
+    }
+}
+
+/* Bonfire */
+.bonfire {
+    margin: 50px auto;
+    width: 140px;
+    height: 140px;
+    background: radial-gradient(circle, #ffdd00, #ff6a00, #c40000);
+    border-radius: 50%;
+    box-shadow: 0 0 40px orange;
+    animation: fire 1s infinite alternate;
+}
+
+/* Fire flicker */
+@keyframes fire {
+    from {
+        transform: scale(1);
+        box-shadow: 0 0 30px orange;
+    }
+    to {
+        transform: scale(1.1);
+        box-shadow: 0 0 70px red;
+    }
+}
